@@ -1,3 +1,24 @@
+import React from 'react';
+import CherryChanga from './Cherrychanga'
+import Chimicherry from './Chimicherry'
+
+const Container = () => {
+    
+    return (
+        <div className='container'>
+            <div className='title'><p>Vote now!</p></div>
+         <CherryChanga/>
+         <Chimicherry/>
+        </div>
+    )
+    }
+
+export default Container
+
+
+/* 
+Css for number votes
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 html {
@@ -76,7 +97,7 @@ button {
   grid-row: 1;
   display: flex;
   justify-content: center;
-  font-size: 2.3em;
+  font-size: 48px;
   margin: auto;
 }
 .chimicherry {
@@ -91,8 +112,8 @@ button {
   display: grid;
   grid-row: 2;
   grid-column: 1;
-  border-radius: 0 0 21px 21px;
-  grid-column: 1/3;
+  border-right: 2px solid #fefbb1;
+  border-radius: 0 0 0 21px;
   justify-content: center;
 }
 .chimi-button {
@@ -111,3 +132,5 @@ button {
   margin: auto;
   color: #272727;
 }
+
+ */

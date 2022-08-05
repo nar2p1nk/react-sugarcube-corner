@@ -1,4 +1,40 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* to use, replace container in app.js and paste the css below to index.css */
+
+import React, { useState } from 'react'
+
+const Bonus = () => {
+    const [Change, setChange] = useState(false)
+    const Hope =() =>{
+        setChange(!Change)
+    }
+    return (
+        <div className='container'>
+            <div className='title'>
+                <p className='main-title'>
+                {Change ? 'Cherrychanga':'Chimicherry'}
+                </p></div>
+
+            <div className='cherrychanga'>
+                <button className='chimi-button'
+                onClick={Hope}>
+                Press!
+                </button>
+            </div>
+        </div>
+    )
+}
+
+export default Bonus
+/*
+  this is css for the bonus,remove the 'Container' component
+  then add the this component in and put the lines below in 
+  'index.css'
+
+  css:
+
+  
+ @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 html {
   background-color: #f9b8d2;
@@ -111,3 +147,8 @@ button {
   margin: auto;
   color: #272727;
 }
+
+
+
+
+*/
